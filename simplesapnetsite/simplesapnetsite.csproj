@@ -39,7 +39,6 @@
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Views\" />
     <Folder Include="Models\ViewComponent\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Domain\" />
     <Folder Include="Service\" />
   </ItemGroup>
