@@ -2,14 +2,21 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using simplesapnetsite.Service;
 
 namespace simplesapnetsite
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+         
+        public Startup(IConfiguration configuration) => Configuration = configuration;
+
         [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
+            Configuration.Bind("Project", new Config());
+
             services.AddControllersWithViews()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                 .AddSessionStateTempDataProvider();
@@ -25,7 +32,7 @@ namespace simplesapnetsite
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}]");
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
