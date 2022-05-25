@@ -7,7 +7,7 @@ namespace simplesapnetsite.Domain.Repositories.Abstract
         IQueryable<TextField> GetTextFields();
         TextField GetTextFieldById(Guid id);
 
-        TextField GetTextFieldByCodeWord(string name);
+        TextField GetTextFieldByCodeWord(string codeword);
 
         void SaveTextField(TextField entity);
 

@@ -10,7 +10,7 @@ namespace simplesapnetsite.Domain
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<TextField> textFields { get; set; }
+        public DbSet<TextField> TextFields { get; set; }
         public DbSet<ServiceItem> ServiceItems { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
