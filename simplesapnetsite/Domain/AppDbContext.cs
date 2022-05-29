@@ -44,21 +44,21 @@ namespace simplesapnetsite.Domain
 
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("65p11189-b018-4fe7-a356-7g8a14c70b99po"),
+                Id = new Guid("65p11189-b018-4fe7-a356-7g8a16c70b99"),
                 CodeWord = "PageIndex",
                 Title = "Главная"
             });
 
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("32p09289-r224-4fe7-a909-0g8a14c70b99io"),
+                Id = new Guid("32p09289-r224-4fe7-a909-7g8a14c72b99"),
                 CodeWord = "PageServices",
                 Title = "Наши услуги"
             });
 
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("13r11189-z009-6fe9-a356-7d8a14c70b99po"),
+                Id = new Guid("13r11189-z009-6fe9-a356-7g8a14c71b99"),
                 CodeWord = "PageContacts",
                 Title = "Контакы"
             });
